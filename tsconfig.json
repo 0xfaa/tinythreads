@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    // Target ES2020 for wide compatibility while still using modern features
+    "target": "ES2020",
+    "lib": [
+      "ES2020",
+      "DOM"
+    ],
+    // Use ES modules
+    "module": "ESNext",
+    "moduleResolution": "node",
+    // Generate declaration files
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    // Output directory
+    "outDir": "./dist",
+    // Strict type checking
+    "strict": true,
+    // Additional checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    // Module interop for smoother imports
+    "esModuleInterop": true,
+    // Advanced options
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    // Ensure we can use the latest JavaScript features
+    "useDefineForClassFields": true,
+    // Allow JS if needed
+    "allowJs": true,
+    "checkJs": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "tinythreads",
+  "version": "1.0.0",
+  "description": "A lightweight library for running functions in separate threads",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && bun build ./src/index.ts --outdir ./dist --target node",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "threads",
+    "web workers",
+    "performance",
+    "concurrency",
+    "bun"
+  ],
+  "author": "0xfaa",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "^1.1.10"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xfaa/tinythreads.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0xfaa/tinythreads/issues"
+  },
+  "homepage": "https://github.com/0xfaa/tinythreads#readme"
+}
