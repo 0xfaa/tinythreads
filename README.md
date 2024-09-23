@@ -18,7 +18,7 @@ npm install tinythreads
 or
 
 ```bash
-yarn add tinythreads
+bun add tinythreads
 ```
 
 ## Usage
